@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        .input{
+            width: 170px;
+            height: 30px;
+            border-radius:30px;
+            margin: 10px;
+        }
+        .input2{
+            width: 200px;
+            height: 30px;
+            border-radius:30px;
+        }
+        .sbt{
+            border-radius: 20px;
+            width: 90px;
+            height: 30px;
+        }
+        .main{
+            height: 300px;
+            width: 250px;
+            margin:auto;
+
+            border: 1px solid white;
+            border-radius: 30px;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+    <input type="text"  placeholder="enter your name" class="input" id="input1">
+    <input type="text"  placeholder="enter your password" class="input" id="input2"><br>
+    <input type="text"  placeholder="enter your cnic number" class="input" id="input3"><br><br>
+    <button class="sbt" onclick="collect()" >submit</button>
+    <a href="login.html"><button class="sbt" >log in </button></a>
+    
+</div>  
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        .input{
+            width: 170px;
+            height: 30px;
+            border-radius:30px;
+            margin: 10px;
+        }
+        .input2{
+            width: 200px;
+            height: 30px;
+            border-radius:30px;
+        }
+        .sbt{
+            border-radius: 20px;
+            width: 90px;
+            height: 30px;
+            margin: 5px;
+        }
+        .main{
+            height: 300px;
+            width: 250px;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 30px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <input type="text"   class="input" id="loginname"  placeholder="name" >
+    <input type="text"  class="input" id="loginpassword" name="" placeholder="password" >
+    <input  class="sbt" type="button" name="enter"  value="submit" onclick="loginbutton()">
+    <a href="index.html"><button class="sbt">sign up</button></a>
+    </div>
+    <script>
+        function loginbutton(){
+        if (document.getElementById('loginname').value ===  localStorage.getItem(personinfo) ||
+        document.getElementById('loginpassword').value === localStorage.getItem(personame) ){
+            alert('login') 
+        }
+        else{
+            alert('user not found ')
+        }
+    }
+    </script>
+
+</body>
+</html>
